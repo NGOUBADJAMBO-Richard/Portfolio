@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
   </head>
 
   <body>
     <!-- Le header avec barre de navigation -->
     <header>
-      <nav>
+      <nav class="navbar">
         <ul>
           <li><a href="#about">about</a></li>
           <li><a href="#work">work</a></li>
@@ -58,24 +59,35 @@
           collaboration.
         </p>
         <p>Email : [votre@email.com]</p>
+        <form>
+          <div class="form-control">
+            <label for="Name">Full Name :</label>
+            <input type="text" name="Name" id="Name" placeholder="FullName" />
+          </div>
+
+          <div class="form-control">
+            <label for="Email">Email :</label>
+            <input type="email" name="Email" id="Email" placeholder="Email" />
+          </div>
+
+          <div class="form-control">
+            <label for="Message">Message :</label>
+
+            <textarea
+              name="Message"
+              id="Message"
+              cols="30"
+              rows="10"
+              placeholder="Your message please"
+            ></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
       </section>
+
       <!-- ceci est un commentaire  -->
       <video src="./file_example_MOV_480_700kB.mov" controls></video>
-
-      <form>
-        <label for="Name">Full Name :</label>
-        <input type="text" name="Name" placeholder="FullName" />
-        <label for="Email">Email :</label>
-        <input type="email" name="Email" placeholder="Email" />
-        <textarea
-          name="Message"
-          id="Message"
-          cols="30"
-          rows="10"
-          placeholder="Your message please"
-        ></textarea>
-        <button type="submit">Submit</button>
-      </form>
     </main>
 
     <footer>Copyright &copy; - 2024</footer>

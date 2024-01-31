@@ -1,0 +1,27 @@
+*{
+    font-family: 'Roboto';
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+form {
+    text-align: center;
+    display: grid;
+    padding: 10%;
+    gap: 20px;
+}
+
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
