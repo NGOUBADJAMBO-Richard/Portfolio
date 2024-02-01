@@ -1,5 +1,5 @@
 *{
-    font-family: 'Roboto';
+    font-family: 'Constantia';
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -31,29 +31,64 @@ header
    background-color:#0084ff
 }
 
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ac5ee4;
-    border-radius: 4px;
-    resize: vertical; 
+.container {
+    box-sizing: border-box;
 }
- label {
+
+input[type=text], textarea{
+    width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
     padding: 12px 12px 12px 0;
-    display: inline-block; /*Espace les éléments du formulaire */
- }
+    display:inline-block;
+    /* Espace les différents points du block */
+}
 
- input[type=submit]:hover {
-    background-color: #f2298f;
- }
+input[type=submit] {
+    background-color:#ccc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
 
- .container {
+input[type=submit]:hover {
+    background-color:#ec2f9e;
+}
+
+.container {
     border-radius: 5px;
-    background-color: rgba(red, green, blue, 0.01);
-    
- }
+    background-color: #f2f2f2;
+    padding: 20px;
+}
 
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
+@media screen and (max-width:600px){
+    .col-25, .col-75, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+}
 footer{
     position: sticky;
     bottom: 0;
