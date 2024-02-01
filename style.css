@@ -1,27 +1,64 @@
 *{
     font-family: 'Roboto';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
+header
+{
+    position: sticky;
+    top: 0;
+}
 .navbar ul{
-    display: flex;
-    list-style: none;
-    gap: 15px;
+    list-style-type: none;
+    gap: 10%; 
+    position: sticky;
     justify-content: center;
-}
-
-a {
-    text-decoration: none;
-}
-
-form {
-    text-align: center;
-    display: grid;
-    padding: 10%;
-    gap: 20px;
-}
-
-
-.form-control{
     display: flex;
-    flex-direction: column;
+   background-image: radial-gradient(circle at 90.21% 73.22%, #0084ff 0, #007eff 8.33%, #5677ff 16.67%, #7a6ff8 25%, #9667ef 33.33%, #ac5ee4 41.67%, #be55d8 50%, #cd4bcb 58.33%, #da41bc 66.67%, #e438ae 75%, #ec2f9e 83.33%, #f2298f 91.67%, #f5267f 100%);
+   top: 0%;
+
+}
+
+.navbar li a{
+    display:grid;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navbar li a:hover {
+   background-color:#0084ff
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ac5ee4;
+    border-radius: 4px;
+    resize: vertical; 
+}
+ label {
+    padding: 12px 12px 12px 0;
+    display: inline-block; /*Espace les éléments du formulaire */
+ }
+
+ input[type=submit]:hover {
+    background-color: #f2298f;
+ }
+
+ .container {
+    border-radius: 5px;
+    background-color: rgba(red, green, blue, 0.01);
+    
+ }
+
+
+footer{
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    background-image: radial-gradient(circle at 90.21% 73.22%, #0084ff 0, #007eff 8.33%, #5677ff 16.67%, #7a6ff8 25%, #9667ef 33.33%, #ac5ee4 41.67%, #be55d8 50%, #cd4bcb 58.33%, #da41bc 66.67%, #e438ae 75%, #ec2f9e 83.33%, #f2298f 91.67%, #f5267f 100%);
+        top: 0%;
 }
