@@ -2,9 +2,9 @@
     font-family: 'Constantia';
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
-header
+
+/* header
 {
     position: sticky;
     top: 0;
@@ -29,10 +29,66 @@ header
 
 .navbar li a:hover {
    background-color:#0084ff
+} */
+
+/* hero background image */
+.bgimage {
+    height: 100vh;
+    background: url('./images.jpeg');
+    background-size: cover;
+    position: relative;
 }
 
-.container {
+/* text css above hero image */
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Works section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+}
+.sevicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color:#008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: rgba(red, #f2f2f2, #008000 , 0.06)
+}
+/* .container {
     box-sizing: border-box;
+} */
+
+.background {
+    position:absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
 input[type=text], textarea{
@@ -68,7 +124,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color:#ec2f9e;
+    border: 1px solid #008000;
 }
 
 .container {
@@ -89,6 +145,7 @@ input[type=submit]:hover {
         margin-top: 0;
     }
 }
+
 footer{
     position: sticky;
     bottom: 0;
