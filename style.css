@@ -3,6 +3,12 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --c1: #030637;
+    --c2: #3C0753;
+    --c3: #720455;
+    --c4: #910A67;
+}
 
 /* header
 {
@@ -34,7 +40,7 @@
 /* hero background image */
 .bgimage {
     height: 100vh;
-    background: url('./IMG-20230119-WA0001.jpg');
+    /* background: url('./IMG-20230119-WA0001.jpg'); */
     background-size: cover;
     position: relative;
 }
@@ -52,7 +58,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--c1) ;
 }
 
 /* Works section css */
@@ -69,16 +75,16 @@
     text-align: center;
 }
 .card:hover .servicesIcon {
-    color:#008000;
+    color: var(--c4);
 }
 .servicesText:hover {
-    border: 1px solid #008000;
+    border: 1px solid var(--c4);
 }
 
 /* display background color black on navbar scroll */
-.navbarScroll.navbarDark {
+/* .navbarScroll.navbarDark {
     background-color: rgba(red, #f2f2f2, #008000 , 0.06)
-}
+} */
 /* .container {
     box-sizing: border-box;
 } */
@@ -91,10 +97,17 @@
     z-index: 0;
 }
 
+.btn {
+    background-color: var(--c2);
+}
+.btn:hover {
+    background-color: var(--c4);
+}
+
 input[type=text], textarea{
     width: 100%;
         padding: 12px;
-        border: 1px solid #ccc;
+        border: 1px solid var(--c4);
         border-radius: 4px;
         resize: vertical;
 }
@@ -102,7 +115,7 @@ input[type=text], textarea{
 input[type=email] {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--c4);
     border-radius: 4px;
     resize: vertical;
 }
@@ -113,8 +126,8 @@ label {
     /* Espace les différents points du block */
 }
 
-input[type=submit] {
-    background-color:#ccc;
+button[type=submit] {
+    background-color: var(--c2);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -123,8 +136,8 @@ input[type=submit] {
     float: left;
 }
 
-input[type=submit]:hover {
-    border: 1px solid #008000;
+[type=submit]:hover {
+    border: 1px solid var(--c1);
 }
 
 .container {
@@ -151,6 +164,6 @@ footer{
     bottom: 0;
     text-align: center;
     padding: 10px;
-    background-image: radial-gradient(circle at 90.21% 73.22%, #0084ff 0, #007eff 8.33%, #5677ff 16.67%, #7a6ff8 25%, #9667ef 33.33%, #ac5ee4 41.67%, #be55d8 50%, #cd4bcb 58.33%, #da41bc 66.67%, #e438ae 75%, #ec2f9e 83.33%, #f2298f 91.67%, #f5267f 100%);
-        top: 0%;
+    /* background-image: radial-gradient(circle at 90.21% 73.22%, #0084ff 0, #007eff 8.33%, #5677ff 16.67%, #7a6ff8 25%, #9667ef 33.33%, #ac5ee4 41.67%, #be55d8 50%, #cd4bcb 58.33%, #da41bc 66.67%, #e438ae 75%, #ec2f9e 83.33%, #f2298f 91.67%, #f5267f 100%); */
+        /* top: 0%; */
 }
