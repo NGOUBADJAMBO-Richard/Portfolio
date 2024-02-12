@@ -62,7 +62,7 @@
       <!-- Barre de navigation -->
 
       <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-        <div class="container">
+        <div class="container bg-transparent">
           <a class="navbar-brand" href="#">Richard</a>
           <button
             class="navbar-toggler"
@@ -73,7 +73,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon">R</span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
@@ -503,41 +503,47 @@
             </div> -->
 
               <!-- ceci est un commentaire  -->
-              <video src="./file_example_MOV_480_700kB.mov" controls></video>
+              <!-- <video src="./file_example_MOV_480_700kB.mov" controls></video> -->
 
               <!-- la section pied de page. -->
 
               <!-- Section canvas -->
               <canvas class="background"></canvas>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-              <script>
-                window.onload = function () {
-                  Particles.init({
-                    selector: ".background",
-                    sizeVariations: 30,
-                    color: ["#0bd", "rgba(0,187,221,.5)", "rgba(0,187,221,.2)"],
-                  });
-                };
-              </script>
             </div>
           </section>
-          <footer>Copyright &copy; - 2024</footer>
-
-          <script type="text/javascript">
-            // add class navbarDark on navbar scroll
-            const header = document.querySelector(".navbar");
-
-            window.onscroll = function () {
-              var top = window.scrollY;
-              if (top >= 100) {
-                header.classList.add("navbarDark");
-              } else {
-                header.classList.remove("navbarDark");
-              }
-            };
-          </script>
         </div>
       </section>
     </main>
+    <footer
+      class="sticky-bottom bg-dark text-center text-light fw-bold"
+      style="position: sticky; bottom: 0"
+    >
+      Copyright &copy; - 2024
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script>
+      window.onload = function () {
+        Particles.init({
+          selector: ".background",
+          sizeVariations: 30,
+          color: ["#0bd", "rgba(0,187,221,.5)", "rgba(0,187,221,.2)"],
+        });
+      };
+    </script>
+
+    <script type="text/javascript">
+      // add class navbarDark on navbar scroll
+      const header = document.querySelector(".navbar");
+
+      window.onscroll = function () {
+        var top = window.scrollY;
+        if (top >= 100) {
+          header.classList.add("navbarDark");
+        } else {
+          header.classList.remove("navbarDark");
+        }
+      };
+    </script>
   </body>
 </html>

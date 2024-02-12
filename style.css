@@ -10,6 +10,10 @@
     --c4: #910A67;
 }
 
+header{
+    padding: 0;
+        margin: 0;
+}
 /* header
 {
     position: sticky;
@@ -160,7 +164,7 @@ button[type=submit] {
 }
 
 footer{
-    position: sticky;
+    /* position: sticky; */
     bottom: 0;
     text-align: center;
     padding: 10px;
