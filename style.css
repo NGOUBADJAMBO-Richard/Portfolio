@@ -1,18 +1,19 @@
-*{
-    font-family: 'Constantia';
-    padding: 0;
-    margin: 0;
-}
-:root{
-    --c1: #030637;
-    --c2: #3C0753;
-    --c3: #720455;
-    --c4: #910A67;
+* {
+  font-family: "Constantia";
+  padding: 0;
+  margin: 0;
 }
 
-header{
-    padding: 0;
-        margin: 0;
+:root {
+  --c1: #030637;
+  --c2: #3c0753;
+  --c3: #720455;
+  --c4: #910a67;
+}
+
+header {
+  padding: 0;
+  margin: 0;
 }
 /* header
 {
@@ -43,46 +44,46 @@ header{
 
 /* hero background image */
 .bgimage {
-    height: 100vh;
-    /* background: url('./IMG-20230119-WA0001.jpg'); */
-    background-size: cover;
-    position: relative;
+  height: 100vh;
+  /* background: url('./IMG-20230119-WA0001.jpg'); */
+  background-size: cover;
+  position: relative;
 }
 
 /* text css above hero image */
 .hero_title {
-    font-size: 4.5rem;
+  font-size: 4.5rem;
 }
 .hero_desc {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--c1) ;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--c1);
 }
 
 /* Works section css */
 .servicesText.card {
-    height: 280px;
-    cursor: pointer;
+  height: 280px;
+  cursor: pointer;
 }
 .sevicesIcon {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
 }
 .card-title {
-    text-align: center;
+  text-align: center;
 }
 .card:hover .servicesIcon {
-    color: var(--c4);
+  color: var(--c4);
 }
 .servicesText:hover {
-    border: 1px solid var(--c4);
+  border: 1px solid var(--c4);
 }
 
 /* display background color black on navbar scroll */
@@ -94,80 +95,83 @@ header{
 } */
 
 .background {
-    position:absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 0;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .btn {
-    background-color: var(--c2);
+  background-color: var(--c2);
 }
 .btn:hover {
-    background-color: var(--c4);
+  background-color: var(--c4);
 }
 
-input[type=text], textarea{
-    width: 100%;
-        padding: 12px;
-        border: 1px solid var(--c4);
-        border-radius: 4px;
-        resize: vertical;
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--c4);
+  border-radius: 4px;
+  resize: vertical;
 }
 
-input[type=email] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid var(--c4);
-    border-radius: 4px;
-    resize: vertical;
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--c4);
+  border-radius: 4px;
+  resize: vertical;
 }
 
 label {
-    padding: 12px 12px 12px 0;
-    display:inline-block;
-    /* Espace les différents points du block */
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  /* Espace les différents points du block */
 }
 
-button[type=submit] {
-    background-color: var(--c2);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: left;
+button[type="submit"] {
+  background-color: var(--c2);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
 }
 
-[type=submit]:hover {
-    border: 1px solid var(--c1);
+[type="submit"]:hover {
+  border: 1px solid var(--c1);
 }
 
 .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 .row::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-@media screen and (max-width:600px){
-    .col-25, .col-75, input[type=submit]{
-        width: 100%;
-        margin-top: 0;
-    }
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
-footer{
-    /* position: sticky; */
-    bottom: 0;
-    text-align: center;
-    padding: 10px;
-    /* background-image: radial-gradient(circle at 90.21% 73.22%, #0084ff 0, #007eff 8.33%, #5677ff 16.67%, #7a6ff8 25%, #9667ef 33.33%, #ac5ee4 41.67%, #be55d8 50%, #cd4bcb 58.33%, #da41bc 66.67%, #e438ae 75%, #ec2f9e 83.33%, #f2298f 91.67%, #f5267f 100%); */
-        /* top: 0%; */
+footer {
+  /* position: sticky; */
+  bottom: 0;
+  text-align: center;
+  padding: 10px;
+  /* background-image: radial-gradient(circle at 90.21% 73.22%, #0084ff 0, #007eff 8.33%, #5677ff 16.67%, #7a6ff8 25%, #9667ef 33.33%, #ac5ee4 41.67%, #be55d8 50%, #cd4bcb 58.33%, #da41bc 66.67%, #e438ae 75%, #ec2f9e 83.33%, #f2298f 91.67%, #f5267f 100%); */
+  /* top: 0%; */
 }
