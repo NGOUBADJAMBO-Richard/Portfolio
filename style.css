@@ -15,6 +15,18 @@ header {
   padding: 0;
   margin: 0;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card-body {
+  flex: 1;
+  overflow-y: auto; /* Add scroll if content overflows */
+  height: 100%; /* Adjust to your preferred height */
+}
+
 /* header
 {
     position: sticky;
@@ -30,6 +42,7 @@ header {
    top: 0%;
 
 }
+
 
 .navbar li a{
     display:grid;
